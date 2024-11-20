@@ -21,14 +21,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val textView: TextView = findViewById(R.id.textView)
-        val editText: EditText = findViewById(R.id.editText)
-        val button: Button = findViewById(R.id.button)
-
-        button.setOnClickListener {
-            val inputText = editText.text.toString()
-            textView.text = "Вы ввели: $inputText"
-        }
 //        enableEdgeToEdge()
 //        setContent {
 //            ITProgerTheme {
