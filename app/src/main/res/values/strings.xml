@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ITProger</string>
-    <string name="button_text">Нажми на меня</string>
+    <string name="calc_title">Калькулятор</string>
+
+    <string name="EditText_hint1">Введите первое число</string>
+    <string name="EditText_hint2">Введите второе число</string>
+    <string name="button_text">Добавить числа</string>
 </resources>
