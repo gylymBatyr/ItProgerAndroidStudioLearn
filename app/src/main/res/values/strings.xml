@@ -5,4 +5,8 @@
     <string name="EditText_hint1">Введите первое число</string>
     <string name="EditText_hint2">Введите второе число</string>
     <string name="button_text">Добавить числа</string>
+
+    <string name="les4_button1">кнопка 1</string>
+    <string name="les4_button2">кнопка 2</string>
+    <string name="les4_button3">кнопка 3</string>
 </resources>
