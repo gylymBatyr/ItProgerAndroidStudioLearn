@@ -19,8 +19,4 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    public fun btnClick(view: View)  {
-         val intent:Intent =  Intent(this, MainActivity2::class.java);
-        startActivity(intent);
-    }
 }
