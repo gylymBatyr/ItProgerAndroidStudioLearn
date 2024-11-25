@@ -14,17 +14,22 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.compose.ui.graphics.Color
 import androidx.core.content.ContextCompat
+import com.example.itproger.data.Country
+import com.example.itproger.data.CountryListAdapter
 
 
 class MainActivity : ComponentActivity() {
-    private val namesArr = arrayOf("John","Doe","Joe","Josh", "Jack", "George");
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val listView: ListView = findViewById(R.id.listView);
-        val adapter: ArrayAdapter<String> = ArrayAdapter(this, R.layout.name_item, R.id.user_name, namesArr);
+        val namesArr: Array<Country> = arrayOf(
+            Country("Kazakhstan","kz",17_000_000),
+            Country("Russia","ru",144_000_000),
+            Country("USA","us",323_000_000));
+        val adapter: CountryListAdapter = CountryListAdapter(this, R.layout.name_item, namesArr);
         listView.adapter = adapter;
     }
 }
