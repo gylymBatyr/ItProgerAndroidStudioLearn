@@ -26,9 +26,9 @@ class MainActivity : ComponentActivity() {
 
         val listView: ListView = findViewById(R.id.listView);
         val namesArr: Array<Country> = arrayOf(
-            Country("Kazakhstan","kz",17_000_000),
-            Country("Russia","ru",144_000_000),
-            Country("USA","us",323_000_000));
+            Country("Kazakhstan",R.drawable.kz,17_000_000),
+            Country("Russia",R.drawable.ru,144_000_000),
+            Country("USA",R.drawable.us,323_000_000));
         val adapter: CountryListAdapter = CountryListAdapter(this, R.layout.name_item, namesArr);
         listView.adapter = adapter;
     }
