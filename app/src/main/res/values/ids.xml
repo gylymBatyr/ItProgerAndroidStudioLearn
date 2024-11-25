@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_create_user" type="id">btn_create_user</item>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SharedPreferences"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/ed_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="8dp"
+        android:backgroundTint="@color/design_default_color_primary" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:layout_marginTop="8dp" />
+
+    <!-- Additional Input -->
+    <EditText
+        android:id="@+id/ed_confirm_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="123"
+        android:padding="8dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:layout_marginTop="8dp" />
+
+    <!-- Create User Button -->
+    <Button
+        android:id="@+id/btn_create_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE USER"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
