@@ -7,67 +7,96 @@
     android:background="@android:color/transparent"
     android:backgroundTint="@android:color/transparent">
 
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:background="#46BEE6"
+        tools:ignore="MissingConstraints">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="105dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginTop="436dp"
-        android:backgroundTint="@android:color/transparent"
-        android:contentDescription="@string/app_name"
-        android:scaleType="centerCrop"
-        android:src="@drawable/kakashi"
-        app:backgroundTint="#9D3434"
-        app:backgroundTintMode="screen"
-        app:layout_anchorGravity="bottom|end"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
-        app:srcCompat="@drawable/kakashi"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="40dp"
+            android:text="Привет, студент!"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="14sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="40dp"
+            android:text="Ваш личный кабинет"
+            android:textColor="@color/white" />
+    </RelativeLayout>
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="55dp"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="-80dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/upper_bg"
         tools:ignore="MissingConstraints"
-        android:contentDescription="@string/app_name"/>
+        tools:layout_editor_absoluteX="50dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="личный кабинет"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="232dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kakashi"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:layout_editor_absoluteX="98dp"
+        android:layout_marginHorizontal="60dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp">
+    </ImageView>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="47dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#46BEE6"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="105dp">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
-            android:id="@+id/btn_fragment1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_weight="1"
-            android:text="фрагмент 1" />
-
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Главная"
+            android:textColor="@color/white"
+            />
         <Button
-            android:id="@+id/btn_fragment2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_weight="1"
-            android:text="фрагмент 2" />
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Контакты"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Блог"
+            android:textColor="@color/white"/>
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/frame_layout"
-        android:layout_width="409dp"
-        android:layout_height="378dp"
-        android:layout_marginTop="152dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
-
-    </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
